@@ -84,21 +84,21 @@
 
 			(1) $*$ er ascosiativ.
 
-			(2) Der eksistere et element $e \in G$ så $\forall a \in G: a*e=e*a=a$
+			(2) Der eksisterer et element $e \in G$ så $\forall a \in G: a*e=e*a=a$
 			kaldet det neutrale element.
 
-			(3) For alle elementer $a \in G$ eksistere $a\inv \in G$ så
+			(3) For alle elementer $a \in G$ eksisterer $a\inv \in G$ så
 			$a*a\inv = a\inv*a = e$ kaldet det inverse element til $a$.
 
 			En gruppe kaldes abelsk hvis $*$ er kommutativ.
 
-			Ofte kalder betegner man $G$ for gruppen istedet for $(G,*)$ og
+			Ofte betegner man gruppen $G$ istedet for $(G,*)$ og
 			da er operationen implicit.
 		\end{defi}
 		Som notation bruges der ofte $\cdot$ som operation istedet for $*$ og
 		$a\cdot b$ bliver ofte skrevet $ab$ istedet. Det neutrale element bliver så
 		betegnet $1$. Dog er det normalt at bruge
-		$+$ for opreationen i abelsek grupper og at bruge $-a$ istedet for $a\inv$.
+		$+$ for opreationen i abelske grupper og at bruge $-a$ istedet for $a\inv$.
 		Dog er $-$ ikke en operation her men der skrives stadig $a-b$ istedet for $a+-b$.
 		\subsection*{Sætninger}
 		\begin{setn}
@@ -111,7 +111,7 @@
 		\end{proof}
 		\subsection*{Vis selv}
 		\begin{setn}
-			Invers elementer er unikke. Altså givet en gruppe $(G,*)$ og tre element
+			Invers elementer er unikke. Altså givet en gruppe $(G,*)$ og tre elementer
 			$a,a_1\inv,a_2\inv\in G$ hvor $a*a_1\inv=a_1\inv*a=e$ og $a*a_2\inv=a_2\inv*a=e$
 			da er $a_1\inv = a_2\inv$.
 		\end{setn}
@@ -122,27 +122,27 @@
 			Givet en gruppe $(G,*)$ og to elementer $a,b \in G$ da er $(a*b)\inv=b\inv*a\inv$.
 		\end{setn}
 	\newpage
-	\section*{Homomorphier 22/2}
-		En vigtig del af abstract algebra er at se på relationer mellem
-		forskellige strukture hvilket gøres ved hjælp af homomorphier og isomorphier.
+	\section*{Homomorfier 22/2}
+		En vigtig del af abstrakt algebra er at se på relationer mellem
+		forskellige strukturer, hvilket gøres ved hjælp af homomorfier og isomorfier.
 		\subsection*{Definitioner}
 		\begin{defi}
 			Lad $(G,*)$ og $(G,\diamond)$ være to grupper og $\varphi: G \too H$ være
-			en function. Da kaldes $\varphi$ en gruppe homomorphi hvis
+			en funktion. Da kaldes $\varphi$ en gruppe homomorfi hvis
 			$$\forall a, b \in G: \varphi(a*b) = \varphi(a) \diamond \varphi(b)$$
 
-			En bijektiv homomorphi kaldes en isomorphi.
+			En bijektiv homomorfi kaldes en isomorfi.
 
-			To grupper $G$ og $H$ kaldes isomorphe hvis der eksistere en isomorphi
+			To grupper $G$ og $H$ kaldes isomorfe hvis der eksisterer en isomorfi
 			mellem dem. Dette skrives $G \cong H$.
 
-			En isomorphi $\varphi: G \too G$ mellem en gruppe $G$ og den selv kaldes for en
-			automorphi på $G$.
+			En isomorfi $\varphi: G \too G$ mellem en gruppe $G$ og den selv kaldes for en
+			automorfi på $G$.
 		\end{defi}
 		\begin{defi}
-			Lad $G$ og $H$ være to grupper med identiterter $e_G$ og $e_H$
-			og $\varphi: G \too H$ være en homomorphi.
-			Da betegner kernen af $\varphi$ mængde af elementer som bliver
+			Lad $G$ og $H$ være to grupper med identiteter $e_G$ og $e_H$
+			og $\varphi: G \too H$ være en homomorfi.
+			Da betegner kernen af $\varphi$ mængden af elementer som bliver
 			afbilledet til $e_H$.
 
 			$$\ker(\varphi) = \{g \in G | \varphi(g) = e_H\}$$
@@ -150,7 +150,7 @@
 		\subsection*{Sætninger}
 		\begin{setn}
 			For to grupper $(G,*)$ og $(H, \diamond)$ med neutrale elementer $e_G$ og $e_H$
-			og en homomorphi $\varphi: G \too H$ da er $\varphi(e_1) = e_2$.
+			og en homomorfi $\varphi: G \too H$ da er $\varphi(e_G) = e_H$.
 		\end{setn}
 		\begin{proof}
 			$$\varphi(e_G) = \varphi(e_G)\diamond e_H
@@ -160,16 +160,16 @@
 		\end{proof}
 		\subsection*{Vis selv}
 		\begin{setn}
-			For to grupper $G$ og $H$, en homomorphi $\varphi: G \too H$
+			For to grupper $G$ og $H$, en homomorfi $\varphi: G \too H$
 			og et element $a \in G$ da er $\varphi(a)\inv = \varphi(a\inv)$.
 		\end{setn}
 		\begin{setn}
-			For to grupper $G$ og $H$ eksistere der altid en homomoprhi mellem dem.
+			For to grupper $G$ og $H$ eksisterer der altid en homomorfi mellem dem.
 		\end{setn}
-		At to grupper er isomorphe betyder at deres struktur er meget ens og isomorphier
-		fungere næsten som en ekvilens relation hvilket ses i følgene opgave.
+		At to grupper er isomorfe betyder at deres struktur er meget ens og isomorfier
+		fungerer næsten som en ækvivalens relation hvilket ses i følgende opgave.
 		\begin{setn}
-			Isomorphier opfylder kravende for en ekvivilens relation:
+			Isomorfier opfylder kravende for en ækvivalens relation:
 
 			$\cong$ er refleksiv altså $G \cong G$ for alle grupper $G$.
 
@@ -180,12 +180,12 @@
 			for alle grupper $G$, $H$ og $K$.
 
 		\end{setn}
-		Årsagen til at det ikke er en ekvivilens relations skyldes at mængde lærer ikke
-		kan lide at konstruere en mængde af alle grupper og der dermed ikke er en mængde
-		ekvivilens relationen kan være over.
+		Årsagen til at det ikke er en ækvivalens relation skyldes at mængdelære ikke
+		kan lide at konstruere en mængde af alle grupper og der dermed ikke er en mængde,
+		som ækvivalens relationen kan være over.
 		\begin{setn}[$\star$] \label{KerInj}
-			Lad $G$ og $H$ være to grupper med identiterter $e_G$ og $e_H$
-			og $\varphi: G \too H$ være en homomorphi.
+			Lad $G$ og $H$ være to grupper med identiteter $e_G$ og $e_H$
+			og $\varphi: G \too H$ være en homomorfi.
 
 			Da er $\varphi$ injektiv hvis og kun hvis $\ker(\varphi) = \{e_G\}$.
 		\end{setn}
@@ -200,13 +200,12 @@
 			Hvis $\ker(\varphi) = {e_G}$ da ses det at
 			$$\varphi(a) = \varphi(b) \imp \varphi(a*b\inv)=\varphi(a)\varphi(b)\inv=e_H
 			\imp a*b\inv \in \ker(\varphi) \imp a*b\inv = e_G \imp a = b$$
-			Hvis $\ker(\varphi)$ ikke er triviel er functionen åbenlyst ikke injektiv.
+			Hvis $\ker(\varphi)$ ikke er triviel er funktionen åbenlyst ikke injektiv.
 		\end{proof}
 		\subsection*{Definitioner}
 		Fra nu af vil noten skifte over til multiplikativ notation så operationer
-		er underforstået i forhold til hvor de sker og der bliver brugt. $1$ bliver
-		også brugt som enhed.
-		$a\cdot b$ eller bare $ab$.
+		er underforstået i forhold til hvor de sker, $1$ bliver brugt som enhed 
+  		og der skrives $a\cdot b$ eller bare $ab$.
 		\begin{defi}
 			Lad $G$ være en gruppe og $H \ne Ø \subseteq G$ være en delmængde.
 			Da er $H$ en undergruppe af $G$ noteret $H \le G$ hvis
@@ -218,7 +217,7 @@
 		\begin{nota}
 			Lad $G$ være en gruppe, $H \le G$ og $g \in G$. Da er der følgende notation
 
-			$gH = \{gh | \forall h \in H\}$ Kaldet en venstrsideklasse.
+			$gH = \{gh | \forall h \in H\}$ Kaldet en venstresideklasse.
 
 			$Hg = \{hg | \forall h \in H\}$ Kaldet en højresideklasse.
 
@@ -231,7 +230,7 @@
 			$aH = bH$ eller $aH\cap bH = Ø$.
 		\end{setn}
 		\begin{proof}
-			Antag at der eksister $c \in aH\cap bH$. Da ligger $c$ både i $aH$ og i $bH$ så
+			Antag at der eksisterer $c \in aH\cap bH$. Da ligger $c$ både i $aH$ og i $bH$, så
 			der må eksistere $h_1, h_2$ så $c = ah_1$ og $c = bh_2$. Da ses det at
 			$$ah_1 = bh_2 \imp a=bh_2h_1\inv$$
 			Lad nu $d$ være et element
@@ -239,21 +238,21 @@
 			$$d = ah_3=bh_2h_1\inv h_3$$
 			Men da $h_1$, $h_2$ og $h_3$ ligger i $H$ må $h_2h_1\inv h_3$ ligge i $H$
 			da $H$ er en undegruppe. Altså må $d$ ligge i $bH$ og dermed er $aH \subseteq bH$.
-			Det ses symmetrisk at $bH \subseteq aH$ hvilket medføre $aH = bH$.
+			Det ses symmetrisk at $bH \subseteq aH$ hvilket medfører $aH = bH$.
 		\end{proof}
 		\subsection*{Vis selv}
 		\begin{setn}
 			Lad $G$ være en gruppe og $H \le G$. Da gælder det at $1 \in H$.
 		\end{setn}
 		\begin{setn}
-			Lad $G$ og $H$ være to grupper og $\varphi: G \too H$ være en homomorphi.
-			Da er både $\ker(\varphi)$ og $\varphi(G)$ undergrupper af $H$.
+			Lad $G$ og $H$ være to grupper og $\varphi: G \too H$ være en homomorfi.
+			Da er $\ker(\varphi) \le G$ og $\varphi(G) \le H$.
 			
 			(Note: $\varphi(G)$ er billedet af $\varphi$ ofte skrevet $\text{im}(\varphi)$.)
 		\end{setn}
 		\begin{setn} \label{SidKlaStø}
 			Lad $G$ være en gruppe, $H \le G$ og $a,b \in G$. Da er $|aH| = |bH|$.
-			Hvilket er ekvivilent med at der eksistere en bijektion mellem $|aH|$ og $|bH|$.
+			Hvilket er ækvivalent med at der eksisterer en bijektion mellem $aH$ og $bH$.
 		\end{setn}
 		\begin{setn}[Lagrange $\star$] \label{Lagrange}
 			Lad $G$ være en endelig gruppe og $H \le G$. Da gælder det at
@@ -290,7 +289,7 @@
 		\end{defi}
 		\subsection*{Vis selv}
 		\begin{setn}
-			Lad $G$ og $H$ være grupper og $\varphi: G \too H$ være en homomorphi.
+			Lad $G$ og $H$ være grupper og $\varphi: G \too H$ være en homomorfi.
 			Da er $\ker(\varphi) \unlhd H$.
 		\end{setn}
 	\newpage
@@ -301,7 +300,7 @@
 			af $H$ sideklasserne hvor for to side klasser $aH$ og $bH$ hvor $a$ og $b$
 			er to vilkårlige representanter er $aH\cdot bH = abH$. Denne gruppe er kaldet
 			en kvotientgruppe.
-			Homomorphien $\pi: G \too G/H$ defineret ved $\pi(g) = gH$ er kaldet
+			homomorfien $\pi: G \too G/H$ defineret ved $\pi(g) = gH$ er kaldet
 			den kanoniske afbildning.
 		\end{defi}
 		\begin{defi}
@@ -353,7 +352,7 @@
 		\end{setn}
 		\begin{setn}
 			Lad $G$ være en gruppe og $H \unlhd G$ da er
-			den kanoniske afbildning en homomorphi.
+			den kanoniske afbildning en homomorfi.
 		\end{setn}
 		\begin{opg}
 			Vis at $(3\Z,+)$ er en gruppe og bestem $\Z/3\Z$.
@@ -362,12 +361,12 @@
 
 			(Bemærkning: $n\Z = \{n\cdot a| \forall a \in \Z\}$.)
 		\end{opg}
-		\begin{setn}[Første isomorphi sætning $\star$] \label{Iso1}
-			Lad $G$ og $H$ være grupper og lad $\varphi: G \too H$ være en gruppe homomorphi.
+		\begin{setn}[Første isomorfi sætning $\star$] \label{Iso1}
+			Lad $G$ og $H$ være grupper og lad $\varphi: G \too H$ være en gruppe homomorfi.
 			Da er $G/\ker(\varphi) \cong \varphi(G)$.
 		\end{setn}
 	\newpage
-	\section*{Isomorphi sætninger del 1 26/2}
+	\section*{Isomorfi sætninger del 1 26/2}
 		\subsection*{Opsamling}
 		Her er beviset for sætning \ref{Iso1}.
 		\begin{proof}
@@ -377,7 +376,7 @@
 			Der eksistere $k \in \ker(\varphi)$ så
 			$$\pi(g\ker(\varphi)) = \varphi(g) = \varphi(g'k) = \varphi(g')\varphi(k)=\varphi(g') =
 			\pi(g'\ker(\varphi))$$
-			Det ses nu at $\pi$ er en homomorphi:
+			Det ses nu at $\pi$ er en homomorfi:
 			$$\pi(a\ker(\varphi)b\ker(\varphi)) = \pi(ab\ker(\varphi)) = \varphi(ab) =
 			\varphi(a)\varphi(b)=\pi(a\ker(\varphi))\pi(b\ker(\varphi))$$
 			Det ses let at $\pi$ er surjektiv da hvis $h \in \varphi(G)$ eksistere $g$
@@ -386,7 +385,7 @@
 			$$\pi(g\ker(\varphi)) = 1 \imp \varphi(g) = 1 \imp g \in \ker(\varphi) \imp
 			g\ker(\varphi) = 1\ker(\varphi)$$
 			Da er kernen af $\pi$ triviel og fra sætning \ref{KerInj} må $\pi$ være injektiv.
-			Ergo er $\pi$ en isomorphi.
+			Ergo er $\pi$ en isomorfi.
 		\end{proof}
 		\subsection*{Definitioner}
 		\begin{defi}
@@ -406,14 +405,14 @@
 			$$a_1b_1a_2b_2 = a_1a_2a_2\inv b_1a_2b_2 = a_1a_2b'b_2$$
 			ergo ligger $(a_1b_1)(a_2b_2)$ i $AB$ og $AB$ må være en undergruppe.
 		\end{proof}
-		\begin{setn}[Den anden isomorphi sætning]
+		\begin{setn}[Den anden isomorfi sætning]
 			Lad $G$ være en gruppe og $A \subset N_G(B)$ og $B$ være undergrupper af $G$.
 			Da er $B \unlhd AB$, $a\cap B \unlhd A$ og $AB/B \cong A/A\cap B$.
 		\end{setn}
 		\begin{proof}
 			Beviset for at $B \unlhd AB$ og $A\cap B \unlhd A$ undlades til læseren(Dagens opgaver).
 			Bestem $\varphi: A \too AB/B$ ved $\varphi(a) = aB$. Da ses det at $\varphi$ er en
-			homomorphi:
+			homomorfi:
 			$$\varphi(aa') = aa'B = aBa'B = \varphi(a)\varphi(a')$$
 			Vi bestemmer nu $\ker(\varphi)$ så betragt $a \in A$ så $\varphi(a) = 1B$
 			Da må $aB = \varphi(a) = 1B$ ergo må $a \in B$ og kernen er dermed $A\cap B$.
@@ -422,7 +421,7 @@
 			$$A/A\cap B = A/\ker(\varphi) \cong \varphi(A) = AB/B$$
 		\end{proof}
 	\newpage
-	\section*{Isomorphi sætninger del 2 27/2}
+	\section*{Isomorfi sætninger del 2 27/2}
 		\subsection*{Vis selv}
 		\begin{setn}
 			Lad $G$ være en gruppe, $H \unlhd G$, $K \unlhd G$ og $H \le K$.
@@ -430,7 +429,7 @@
 			Da er $K/H \unlhd G/H$ og
 		\end{setn}
 		\subsection*{Sætninger}
-		\begin{setn}[Tredje isomorphi sætning] \label{Iso3}
+		\begin{setn}[Tredje isomorfi sætning] \label{Iso3}
 			Lad $G$ være en gruppe, $H \unlhd G$, $K \unlhd G$ og $H \le K$.
 
 			Da er $(G/H)/(K/H) \cong G/K$
@@ -450,9 +449,9 @@
 			Det ses let at $\varphi$ er surjektiv og fra sætning \ref{Iso1} ses det så at
 			$$(G/H)/(K/H) = (G/K)/\ker(\varphi) \cong = \varphi(G/K) = G/K$$
 		\end{proof}
-		Af isomorphi sætninger er det den første der er den stærkeste hvilket de to andre viser
-		da beviserne falder ud ved at betragte den mest trivielle homomorphi og der efter bruge
-		første isomorphi sætning.
+		Af isomorfi sætninger er det den første der er den stærkeste hvilket de to andre viser
+		da beviserne falder ud ved at betragte den mest trivielle homomorfi og der efter bruge
+		første isomorfi sætning.
 
 		Næste gang begynder vi på det sidste store resultat i gruppe teori vi vil se på før vi
 		går videre til ringe og legmer.
